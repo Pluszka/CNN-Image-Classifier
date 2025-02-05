@@ -108,12 +108,11 @@ if __name__ == "__main__":
     # resize = tf.image.resize(img, (256, 256))
     # plt.imshow(resize.numpy().astype(int))
     # plt.show()
-    #
+
     # yhat = model.predict(np.expand_dims(resize / 255, 0))
 
 
     model.save(os.path.join('models', 'imageclassifier.keras'))
-    new_model = load_model('models/imageclassifier.keras')
-    # new_model.predict(np.expand_dims(resize / 255, 0))
-    # array([[0.01972741]], dtype=float32)
+    # new_model = load_model('models/imageclassifier.keras')
+    # print(new_model.predict(np.expand_dims(resize / 255, 0)))
 
